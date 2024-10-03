@@ -1,0 +1,21 @@
+/* Navbar.module.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navItem {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navItem:hover {
+    color: #ff5733;
+  }
+  

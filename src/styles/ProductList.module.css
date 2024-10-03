@@ -1,0 +1,64 @@
+.itemCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 300px;
+  margin: auto;
+}
+
+.itemCard:hover {
+  transform: scale(1.05);
+}
+
+.itemImage {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%; /* Makes the image take up the full width when wrapping */
+}
+
+.itemDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  flex-basis: 100%; /* Makes the details take up full width when wrapping */
+}
+
+.itemTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  max-height: 40px;         /* Limits height to 2 lines */
+  overflow: hidden;         /* Hides overflowing content */
+  line-height: 1.2;         /* Adjust line spacing */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;    /* Limits to 2 lines */
+  -webkit-box-orient: vertical;    
+}
+
+.itemPrice {
+  font-size: 16px;
+  color: #888;
+}
+
+.itemRating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap; /* Allow rating items to wrap */
+}
+
+.itemRating p {
+  font-size: 14px;
+  color: #555;
+  flex-basis: 45%; /* Each rating text takes up approximately half the space */
+}
